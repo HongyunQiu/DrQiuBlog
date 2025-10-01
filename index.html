@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr.Qiu's Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Markdown 渲染库 -->
+    <script src="https://cdn.jsdelivr.net/npm/marked@11.1.1/marked.min.js"></script>
+    <!-- 语法高亮库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="config.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- 左侧导航栏 -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1 class="blog-title">Dr.Qiu's Blog</h1>
+                <p class="blog-subtitle">分享技术见解与生活感悟</p>
+            </div>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <!-- 导航菜单将通过JavaScript动态生成 -->
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="social-links">
+                    <a href="#" class="social-link">GitHub</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">Email</a>
+                </div>
+                <p class="copyright">© 2024 Dr.Qiu</p>
+            </div>
+        </aside>
+
+        <!-- 右侧内容区域 -->
+        <main class="main-content" id="main-content">
+            <!-- 内容将通过JavaScript动态生成 -->
+            <!-- 首页内容 -->
+            <section id="home" class="content-section active">
+                <div class="welcome-section">
+                    <h2>欢迎来到我的博客</h2>
+                    <p>这里记录着我的技术探索、学习心得和生活感悟。</p>
+                </div>
+
+                <div class="recent-posts">
+                    <h3>最新文章</h3>
+                    <article class="post-preview">
+                        <h4><a href="#">深入理解JavaScript闭包机制</a></h4>
+                        <p class="post-meta">2024年1月15日 · 技术文章</p>
+                        <p>闭包是JavaScript中一个重要且有趣的概念，本文将深入探讨闭包的工作原理、使用场景和注意事项...</p>
+                    </article>
+
+                    <article class="post-preview">
+                        <h4><a href="#">如何构建高效的团队协作流程</a></h4>
+                        <p class="post-meta">2024年1月10日 · 生活随笔</p>
+                        <p>在软件开发团队中，良好的协作流程是项目成功的关键因素之一。分享一些我在团队管理中的实践经验...</p>
+                    </article>
+
+                    <article class="post-preview">
+                        <h4><a href="#">Vue 3 Composition API 最佳实践</a></h4>
+                        <p class="post-meta">2024年1月5日 · 技术文章</p>
+                        <p>Vue 3的Composition API为组件开发带来了新的可能性，本文将介绍一些实用的最佳实践和设计模式...</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- 关于我内容 -->
+            <section id="about" class="content-section">
+                <h2>关于我</h2>
+                <div class="about-content">
+                    <div class="profile-info">
+                        <div class="avatar-placeholder">
+                            <span>Dr.Qiu</span>
+                        </div>
+                        <div class="profile-text">
+                            <h3>邱博士</h3>
+                            <p class="title">软件工程师 & 技术博主</p>
+                            <p>热爱编程，专注于前端开发和软件架构设计。喜欢分享技术见解，热衷于开源项目。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-section">
+                        <h4>专业技能</h4>
+                        <div class="skills-grid">
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">Vue.js</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 技术文章内容 -->
+            <section id="tech" class="content-section">
+                <h2>技术文章</h2>
+                <div class="articles-list">
+                    <article class="article-item">
+                        <h3><a href="#">深入理解JavaScript闭包机制</a></h3>
+                        <p class="article-meta">2024年1月15日</p>
+                        <p>闭包是JavaScript中一个重要且有趣的概念，本文将深入探讨闭包的工作原理、使用场景和注意事项。</p>
+                    </article>
+
+                    <article class="article-item">
+                        <h3><a href="#">Vue 3 Composition API 最佳实践</a></h3>
+                        <p class="article-meta">2024年1月5日</p>
+                        <p>Vue 3的Composition API为组件开发带来了新的可能性，本文将介绍一些实用的最佳实践和设计模式。</p>
+                    </article>
+
+                    <article class="article-item">
+                        <h3><a href="#">CSS Grid布局完全指南</a></h3>
+                        <p class="article-meta">2023年12月20日</p>
+                        <p>CSS Grid是现代网页布局的强大工具，本指南将详细介绍Grid的各种属性和使用方法。</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- 生活随笔内容 -->
+            <section id="life" class="content-section">
+                <h2>生活随笔</h2>
+                <div class="articles-list">
+                    <article class="article-item">
+                        <h3><a href="#">如何构建高效的团队协作流程</a></h3>
+                        <p class="article-meta">2024年1月10日</p>
+                        <p>在软件开发团队中，良好的协作流程是项目成功的关键因素之一。分享一些我在团队管理中的实践经验。</p>
+                    </article>
+
+                    <article class="article-item">
+                        <h3><a href="#">远程工作的挑战与机遇</a></h3>
+                        <p class="article-meta">2023年12月15日</p>
+                        <p>远程工作已经成为现代职场的新常态，本文分享一些远程工作的心得体会和实用技巧。</p>
+                    </article>
+
+                    <article class="article-item">
+                        <h3><a href="#">持续学习的重要性</a></h3>
+                        <p class="article-meta">2023年11月30日</p>
+                        <p>在快速发展的技术领域，持续学习是保持竞争力的关键。分享一些学习方法和资源推荐。</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- 联系方式内容 -->
+            <section id="contact" class="content-section">
+                <h2>联系方式</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <h4>邮箱</h4>
+                            <p>contact@drqiu.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <h4>GitHub</h4>
+                            <p><a href="#">github.com/drqiu</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <h4>Twitter</h4>
+                            <p><a href="#">@drqiu_dev</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <h4>LinkedIn</h4>
+                            <p><a href="#">linkedin.com/in/drqiu</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h4>发送消息</h4>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">姓名</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">邮箱</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">消息</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">发送消息</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="update-checker.js"></script>
+    <script src="dynamic-loader.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
