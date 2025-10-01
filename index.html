@@ -4,6 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr.Qiu's Blog</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Dr.Qiu的个人博客，分享天文相机技术、LLM模型开发、编程技术见解与生活感悟。QHYCCD天文相机创始人，专注于技术研究和创新。">
+    <meta name="keywords" content="天文相机,QHYCCD,LLM模型,长思,技术博客,编程,JavaScript,Vue,天文摄影,深度学习,人工智能,Dr.Qiu">
+    <meta name="author" content="Dr.Qiu">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="zh-CN">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Dr.Qiu's Blog - 技术见解与生活感悟">
+    <meta property="og:description" content="分享天文相机技术、LLM模型开发、编程技术见解与生活感悟的个人博客">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hongyunqiu.github.io/DrQiuBlog/">
+    <meta property="og:site_name" content="Dr.Qiu's Blog">
+    <meta property="og:locale" content="zh_CN">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dr.Qiu's Blog - 技术见解与生活感悟">
+    <meta name="twitter:description" content="分享天文相机技术、LLM模型开发、编程技术见解与生活感悟的个人博客">
+    <meta name="twitter:creator" content="@HongyunQiu">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#667eea">
+    <meta name="msapplication-TileColor" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://hongyunqiu.github.io/DrQiuBlog/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" as="style">
+    <link rel="preload" href="config.js" as="script">
+    <link rel="preload" href="dynamic-loader.js" as="script">
+    
+    <!-- DNS prefetch for external resources -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <!-- Markdown 渲染库 -->
@@ -12,6 +61,57 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <script src="config.js"></script>
+    
+    <!-- 结构化数据 (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Dr.Qiu's Blog",
+        "description": "Dr.Qiu的个人博客，分享天文相机技术、LLM模型开发、编程技术见解与生活感悟",
+        "url": "https://hongyunqiu.github.io/DrQiuBlog/",
+        "author": {
+            "@type": "Person",
+            "name": "Dr.Qiu",
+            "jobTitle": "QHYCCD天文相机创始人 & 技术博主",
+            "email": "qiuhy02@gmail.com",
+            "sameAs": [
+                "https://github.com/HongyunQiu",
+                "https://twitter.com/HongyunQiu"
+            ]
+        },
+        "publisher": {
+            "@type": "Person",
+            "name": "Dr.Qiu"
+        },
+        "inLanguage": "zh-CN",
+        "dateCreated": "2024-01-01",
+        "dateModified": "2024-01-15",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://hongyunqiu.github.io/DrQiuBlog/"
+        },
+        "blogPost": [
+            {
+                "@type": "BlogPosting",
+                "headline": "关于长思LLM模型",
+                "description": "去年夏天开始训练的LLM模型cn_dict_novel终于有了正式的名字，在chatGPT建议的几个名字中选择了"长思"这个名字",
+                "url": "https://hongyunqiu.github.io/DrQiuBlog/#tech-关于长思llm模型",
+                "datePublished": "2024-01-15",
+                "dateModified": "2024-01-15",
+                "author": {
+                    "@type": "Person",
+                    "name": "Dr.Qiu"
+                },
+                "publisher": {
+                    "@type": "Person",
+                    "name": "Dr.Qiu"
+                }
+            }
+        ],
+        "keywords": "天文相机,QHYCCD,LLM模型,长思,技术博客,编程,JavaScript,Vue,天文摄影,深度学习,人工智能"
+    }
+    </script>
 </head>
 <body>
     <div class="container">
@@ -28,9 +128,9 @@
 
             <div class="sidebar-footer">
                 <div class="social-links">
-                    <a href="#" class="social-link">GitHub</a>
-                    <a href="#" class="social-link">Twitter</a>
-                    <a href="#" class="social-link">Email</a>
+                    <a href="https://github.com/HongyunQiu" class="social-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://twitter.com/HongyunQiu" class="social-link" target="_blank" rel="noopener noreferrer">Twitter</a>
+                    <a href="mailto:qiuhy02@gmail.com" class="social-link">Email</a>
                 </div>
                 <p class="copyright">© 2024 Dr.Qiu</p>
             </div>
@@ -140,15 +240,15 @@
                         </div>
                         <div class="contact-item">
                             <h4>GitHub</h4>
-                            <p><a href="#">github.com/HongyunQiu/</a></p>
+                            <p><a href="https://github.com/HongyunQiu" target="_blank" rel="noopener noreferrer">github.com/HongyunQiu/</a></p>
                         </div>
                         <div class="contact-item">
                             <h4>Twitter</h4>
-                            <p><a href="#">@HongyunQiu</a></p>
+                            <p><a href="https://twitter.com/HongyunQiu" target="_blank" rel="noopener noreferrer">@HongyunQiu</a></p>
                         </div>
                         <div class="contact-item">
                             <h4>LinkedIn</h4>
-                            <p><a href="#"></a></p>
+                            <p><a href="#" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
                         </div>
                     </div>
                     

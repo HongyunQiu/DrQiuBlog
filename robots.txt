@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+
+# 允许搜索引擎抓取所有内容
+Disallow: /config.js
+Disallow: /generate-config.py
+Disallow: /generate-config.js
+Disallow: /update-checker.js
+Disallow: /dynamic-loader.js
+Disallow: /auto-server.js
+Disallow: /update-config-py.bat
+Disallow: /update-config.bat
+Disallow: /start-auto-server.bat
+Disallow: /start-server.bat
+Disallow: /start-with-auto-update.bat
+
+# 禁止抓取配置和脚本文件
+Disallow: /DOC/
+Disallow: /context/
+
+# 禁止抓取文档和内容目录（因为内容通过JavaScript动态加载）
+
+# Sitemap位置
+Sitemap: https://hongyunqiu.github.io/DrQiuBlog/sitemap.xml
+
+# 爬取延迟（可选）
+Crawl-delay: 1
