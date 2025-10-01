@@ -110,6 +110,36 @@ document.addEventListener('DOMContentLoaded', function() {
     // 初始化移动端菜单
     initMobileMenu();
     
+    // 滚动条状态检测
+    function initScrollbarDetection() {
+        const sidebar = document.querySelector('.sidebar');
+        if (!sidebar) return;
+        
+        function checkScrollable() {
+            if (sidebar.scrollHeight > sidebar.clientHeight) {
+                sidebar.classList.add('scrollable');
+            } else {
+                sidebar.classList.remove('scrollable');
+            }
+        }
+        
+        // 初始检测
+        checkScrollable();
+        
+        // 监听窗口大小变化
+        window.addEventListener('resize', checkScrollable);
+        
+        // 监听内容变化（如果有动态内容加载）
+        const observer = new MutationObserver(checkScrollable);
+        observer.observe(sidebar, { 
+            childList: true, 
+            subtree: true 
+        });
+    }
+    
+    // 初始化滚动条检测
+    initScrollbarDetection();
+    
     // 添加键盘导航支持
     document.addEventListener('keydown', function(e) {
         if (e.altKey) {
