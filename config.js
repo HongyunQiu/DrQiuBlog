@@ -1,6 +1,6 @@
 // 博客内容配置文件
 // 此文件由 generate-config.py 自动生成
-// 生成时间: 2025-10-01 19:47:00
+// 生成时间: 2025-10-01 22:11:51
 
 const blogConfig = {
     // 内容目录的基础路径
@@ -30,6 +30,13 @@ const blogConfig = {
                         name: '古文',
                         filename: '古文.txt',
                         description: '于此偕州山石间，朝露未揩。烟霞漫天。时会中鼓，新晴尚白，醉雨垂杨。上有树荫曰“朝霞浸城”，下有草树曰...',
+                        type: 'text'
+                    },
+                {
+                        id: 'ChangeSiLLM-和着风中的你',
+                        name: '和着风中的你',
+                        filename: '和着风中的你.txt',
+                        description: '和着风中的你',
                         type: 'text'
                     },
                 {
@@ -65,6 +72,13 @@ const blogConfig = {
                         name: '梦境有一千万里路',
                         filename: '梦境有一千万里路.txt',
                         description: '梦境有一千万里路，那足迹罕至。而所有梦境在那里都是千万里的长途。那是活着的感觉，而且只有活着的时候，...',
+                        type: 'text'
+                    },
+                {
+                        id: 'ChangeSiLLM-菲舍尔花园',
+                        name: '菲舍尔花园',
+                        filename: '菲舍尔花园.txt',
+                        description: '300年后的1982年12月23日，一个晴朗的上午，在菲舍尔花园之中，我正在散步，刚才从菲舍尔花园走...',
                         type: 'text'
                     }
             ],
