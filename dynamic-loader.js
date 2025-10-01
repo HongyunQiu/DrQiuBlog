@@ -13,13 +13,129 @@ class BlogDynamicLoader {
     // 初始化博客
     async init() {
         this.renderNavigation();
+        this.renderLatestPosts();
         this.bindEvents();
-        
+
         // 检查URL hash
         const hash = window.location.hash.substring(1);
         if (hash) {
             this.handleHashChange(hash);
         }
+    }
+
+    // 渲染首页的最新文章
+    renderLatestPosts() {
+        const listContainer = document.getElementById('recent-posts-list');
+        if (!listContainer || !this.config || typeof this.config.getDynamicCategories !== 'function') {
+            return;
+        }
+
+        const posts = [];
+        const categories = this.config.getDynamicCategories();
+
+        categories.forEach(category => {
+            if (!category.files || category.files.length === 0) {
+                return;
+            }
+
+            category.files.forEach(file => {
+                posts.push({
+                    categoryId: category.id,
+                    categoryName: category.name,
+                    fileId: file.id,
+                    title: file.name,
+                    preview: file.preview || file.description || '',
+                    lastModified: file.lastModified,
+                    lastModifiedTimestamp: file.lastModifiedTimestamp
+                });
+            });
+        });
+
+        if (posts.length === 0) {
+            listContainer.innerHTML = '<p class="no-posts">暂无文章，敬请期待。</p>';
+            return;
+        }
+
+        posts.sort((a, b) => {
+            const getTimestamp = (post) => {
+                if (typeof post.lastModifiedTimestamp === 'number') {
+                    return post.lastModifiedTimestamp;
+                }
+                if (post.lastModified) {
+                    const parsed = Date.parse(post.lastModified);
+                    return isNaN(parsed) ? 0 : parsed;
+                }
+                return 0;
+            };
+
+            return getTimestamp(b) - getTimestamp(a);
+        });
+
+        const latestPosts = posts.slice(0, 3);
+        listContainer.innerHTML = '';
+
+        const hasBlogUtils = typeof BlogUtils !== 'undefined';
+
+        latestPosts.forEach(post => {
+            const article = document.createElement('article');
+            article.className = 'post-preview';
+
+            const title = document.createElement('h4');
+            const link = document.createElement('a');
+            link.href = `#${post.categoryId}/${post.fileId}`;
+            link.textContent = post.title;
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                this.showFileDetail(post.categoryId, post.fileId);
+
+                const navSubLink = document.querySelector(`.nav-sublink[href="#${post.categoryId}/${post.fileId}"]`);
+                if (navSubLink) {
+                    this.updateActiveSubNav(navSubLink);
+                } else {
+                    this.updateActiveNav(post.categoryId);
+                }
+            });
+
+            title.appendChild(link);
+            article.appendChild(title);
+
+            const meta = document.createElement('p');
+            meta.className = 'post-meta';
+
+            let metaText = '';
+            if (post.lastModified) {
+                try {
+                    if (hasBlogUtils) {
+                        metaText = BlogUtils.formatDate(post.lastModified);
+                    } else {
+                        const dateInstance = new Date(post.lastModified);
+                        metaText = isNaN(dateInstance.getTime()) ? '' : dateInstance.toLocaleDateString('zh-CN');
+                    }
+                } catch (error) {
+                    metaText = '';
+                }
+            }
+            if (!metaText) {
+                metaText = '更新时间未知';
+            }
+            if (post.categoryName) {
+                metaText += ` · ${post.categoryName}`;
+            }
+            meta.textContent = metaText;
+            article.appendChild(meta);
+
+            const preview = document.createElement('p');
+            if (post.preview) {
+                preview.textContent = hasBlogUtils
+                    ? BlogUtils.truncateText(post.preview, 120)
+                    : (post.preview.length > 120 ? `${post.preview.slice(0, 120)}...` : post.preview);
+            } else {
+                preview.textContent = '暂无摘要';
+            }
+            article.appendChild(preview);
+
+            listContainer.appendChild(article);
+        });
     }
 
     // 渲染导航菜单
