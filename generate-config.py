@@ -124,6 +124,25 @@ def get_file_description(file_path):
         return '暂无描述'
 
 
+def get_file_preview(file_path, length):
+    """读取文件内容生成预览文本"""
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            # 读取比预览长度稍长的内容，确保足够的文本
+            content = f.read(length * 4)
+
+        # 将换行和多余空白替换为单个空格
+        cleaned = re.sub(r'\s+', ' ', content).strip()
+        if not cleaned:
+            return '暂无摘要'
+
+        if len(cleaned) > length:
+            return cleaned[:length].rstrip() + '...'
+        return cleaned
+    except Exception:
+        return '暂无摘要'
+
+
 def generate_categories(scanned_files):
     """生成类别配置"""
     categories = []
@@ -145,12 +164,22 @@ def generate_categories(scanned_files):
             file_path = os.path.join(CONFIG['context_dir'], category_id, filename)
             file_ext = Path(filename).suffix
             basename = Path(filename).stem
-            
+
+            try:
+                last_modified_ts = os.path.getmtime(file_path)
+                last_modified_iso = datetime.fromtimestamp(last_modified_ts).isoformat()
+            except OSError:
+                last_modified_ts = None
+                last_modified_iso = ''
+
             file_configs.append({
                 'id': generate_file_id(category_id, filename),
                 'name': basename,
                 'filename': filename,
                 'description': get_file_description(file_path),
+                'preview': get_file_preview(file_path, CONFIG['preview_length']),
+                'lastModified': last_modified_iso,
+                'lastModifiedTimestamp': last_modified_ts,
                 'type': 'markdown' if file_ext == '.md' else 'text'
             })
         

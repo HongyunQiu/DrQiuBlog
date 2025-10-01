@@ -239,6 +239,21 @@ body {
     font-weight: 600;
 }
 
+.recent-posts-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.recent-posts-list .post-preview + .post-preview {
+    margin-top: 0;
+}
+
+.recent-posts .no-posts {
+    color: #a0aec0;
+    margin: 0;
+    font-size: 1rem;
+}
+
 .post-preview {
     border-bottom: 1px solid #4a5568;
     padding: 1.5rem 0;
