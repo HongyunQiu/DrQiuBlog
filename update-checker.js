@@ -15,7 +15,7 @@ class UpdateChecker {
      */
     async init() {
         // 在页面加载时显示提示
-        this.showUpdateReminder();
+        // this.showUpdateReminder(); // 已禁用温馨提示功能
         
         // 定期检查（仅供参考，实际无法获取文件修改时间）
         // setInterval(() => this.checkForUpdates(), this.checkInterval);
