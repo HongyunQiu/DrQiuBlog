@@ -23,6 +23,39 @@ class BlogDynamicLoader {
         }
     }
 
+    // 安全的滚动条检测调用
+    safeScrollbarCheck() {
+        console.log('调用滚动条检测...');
+        
+        // 立即检测一次
+        requestAnimationFrame(() => {
+            if (typeof window.checkSidebarScrollable === 'function') {
+                console.log('立即检测滚动条状态');
+                window.checkSidebarScrollable();
+            } else {
+                console.log('滚动条检测函数未定义');
+            }
+        });
+
+        // 等待CSS动画完成后再次检测（用于展开时）
+        setTimeout(() => {
+            if (typeof window.checkSidebarScrollable === 'function') {
+                console.log('延迟检测滚动条状态');
+                window.checkSidebarScrollable();
+            } else {
+                console.log('延迟检测时滚动条检测函数未定义');
+            }
+        }, 350);
+        
+        // 额外的检测，确保在动画完全结束后再次检查
+        setTimeout(() => {
+            if (typeof window.checkSidebarScrollable === 'function') {
+                console.log('最终检测滚动条状态');
+                window.checkSidebarScrollable();
+            }
+        }, 500);
+    }
+
     // 渲染首页的最新文章
     renderLatestPosts() {
         const listContainer = document.getElementById('recent-posts-list');
@@ -205,6 +238,9 @@ class BlogDynamicLoader {
 
         navMenu.innerHTML = '';
         navMenu.appendChild(ul);
+        
+        // 导航渲染完成后重新检测滚动条状态
+        this.safeScrollbarCheck();
     }
 
     // 绑定事件
@@ -220,6 +256,9 @@ class BlogDynamicLoader {
                 if (category && category.files && category.files.length > 0) {
                     const li = e.currentTarget.parentElement;
                     li.classList.toggle('expanded');
+                    
+                    // 安全的滚动条检测调用
+                    this.safeScrollbarCheck();
                 }
                 
                 // 如果是静态页面，显示静态内容

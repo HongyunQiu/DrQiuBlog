@@ -116,10 +116,26 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!sidebar) return;
         
         function checkScrollable() {
-            if (sidebar.scrollHeight > sidebar.clientHeight) {
+            const wasScrollable = sidebar.classList.contains('scrollable');
+            
+            // 强制重新计算布局
+            sidebar.style.height = 'auto';
+            const naturalHeight = sidebar.scrollHeight;
+            sidebar.style.height = '100vh';
+            
+            const isScrollable = naturalHeight > sidebar.clientHeight;
+            
+            if (isScrollable) {
                 sidebar.classList.add('scrollable');
             } else {
                 sidebar.classList.remove('scrollable');
+            }
+            
+            // 调试信息
+            console.log(`滚动条检测: 自然高度=${naturalHeight}px, 可视高度=${sidebar.clientHeight}px, 可滚动=${isScrollable}`);
+            
+            if (wasScrollable !== isScrollable) {
+                console.log(`滚动条状态更新: ${isScrollable ? '可滚动' : '不可滚动'}`);
             }
         }
         
@@ -135,6 +151,9 @@ document.addEventListener('DOMContentLoaded', function() {
             childList: true, 
             subtree: true 
         });
+        
+        // 将检测函数暴露到全局，供其他模块调用
+        window.checkSidebarScrollable = checkScrollable;
     }
     
     // 初始化滚动条检测
