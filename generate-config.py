@@ -337,6 +337,20 @@ def main():
     print(f"   - 文章总数: {total_files} 篇")
     
     print('\n[DONE] 完成！现在可以刷新浏览器查看更新。')
+    
+    # 自动更新sitemap.xml
+    print('\n[SITEMAP] 正在更新sitemap.xml...')
+    try:
+        import subprocess
+        result = subprocess.run(['python', 'generate-sitemap-simple.py'], 
+                              capture_output=True, text=True, encoding='utf-8')
+        if result.returncode == 0:
+            print('[SUCCESS] sitemap.xml已自动更新！')
+        else:
+            print(f'[WARN] sitemap.xml更新失败: {result.stderr}')
+    except Exception as e:
+        print(f'[WARN] 无法自动更新sitemap.xml: {e}')
+        print('[INFO] 请手动运行: python generate-sitemap.py')
 
 
 if __name__ == '__main__':

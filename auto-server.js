@@ -54,16 +54,16 @@ function regenerateConfig() {
     isUpdating = true;
     lastUpdateTime = now;
     
-    console.log('\n[AUTO] 检测到文件变化，正在重新生成配置...');
+    console.log('\n[AUTO] 检测到文件变化，正在重新生成配置和Sitemap...');
     
     try {
-        // 运行 Python 脚本
+        // 运行 Python 脚本（会自动更新sitemap）
         const output = execSync(`python ${CONFIG_SCRIPT}`, { 
             encoding: 'utf-8',
             stdio: 'pipe'
         });
         console.log(output);
-        console.log('[SUCCESS] 配置已自动更新！');
+        console.log('[SUCCESS] 配置和Sitemap已自动更新！');
     } catch (error) {
         console.error('[ERROR] 配置更新失败:', error.message);
     } finally {

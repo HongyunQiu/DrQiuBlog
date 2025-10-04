@@ -4,124 +4,287 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-    <!-- 首页 -->
     <url>
         <loc>https://hongyunqiu.github.io/DrQiuBlog/</loc>
-        <lastmod>2024-01-15</lastmod>
+        <lastmod>2025-10-05</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
-
-    <!-- 关于我页面 -->
-    <url>
-        <loc>https://hongyunqiu.github.io/DrQiuBlog/#about</loc>
-        <lastmod>2024-01-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- 技术文章页面 -->
-    <url>
-        <loc>https://hongyunqiu.github.io/DrQiuBlog/#tech</loc>
-        <lastmod>2024-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-
-    <!-- 生活随笔页面 -->
-    <url>
-        <loc>https://hongyunqiu.github.io/DrQiuBlog/#life</loc>
-        <lastmod>2024-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- ChangeSiLLM页面 -->
     <url>
         <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM</loc>
-        <lastmod>2024-01-15</lastmod>
+        <lastmod>2025-10-05</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
-
-    <!-- 联系方式页面 -->
-    <url>
-        <loc>https://hongyunqiu.github.io/DrQiuBlog/#contact</loc>
-        <lastmod>2024-01-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <!-- 技术文章详情页面 -->
-    <url>
-        <loc>https://hongyunqiu.github.io/DrQiuBlog/#tech-关于长思llm模型</loc>
-        <lastmod>2024-01-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- ChangeSiLLM文章详情页面 -->
     <url>
         <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-你是一个好奇心很重的人</loc>
-        <lastmod>2024-01-15</lastmod>
+        <lastmod>2025-10-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-
+    <url>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-先天感知</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-克列斯提姆市</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-去森林</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
     <url>
         <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-古文</loc>
-        <lastmod>2024-01-15</lastmod>
+        <lastmod>2025-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-
     <url>
         <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-和着风中的你</loc>
-        <lastmod>2024-01-15</lastmod>
+        <lastmod>2025-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-
+    <url>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-四个梦</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-子曰</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-存在永恒</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-小飞船</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-怪人</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-我是一个人工智能机器人</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
     <url>
         <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-我看到骆驼</loc>
-        <lastmod>2024-01-15</lastmod>
+        <lastmod>2025-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-
     <url>
         <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-我问佛</loc>
-        <lastmod>2024-01-15</lastmod>
+        <lastmod>2025-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-
     <url>
         <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-描绘梦境</loc>
-        <lastmod>2024-01-15</lastmod>
+        <lastmod>2025-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-
+    <url>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-最后的文明人</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
     <url>
         <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-有感</loc>
-        <lastmod>2024-01-15</lastmod>
+        <lastmod>2025-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-
+    <url>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-梦境</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
     <url>
         <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-梦境有一千万里路</loc>
-        <lastmod>2024-01-15</lastmod>
+        <lastmod>2025-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-
     <url>
-        <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-菲舍尔花园</loc>
-        <lastmod>2024-01-15</lastmod>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-民间旅行者</loc>
+        <lastmod>2025-10-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-沙漏里的男人</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-独坐一隅</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-理论的根本论断</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-番外美丽的雪</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-白帆船</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-神殿</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-神殿探险</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-第一个蓝色光球</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-第十九回</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-红楼梦仿写</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-终极轨迹</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-菲舍尔花园</loc>
+        <lastmod>2025-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-表演大厅</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-语言</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-预知之火</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-骨节雨</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-鬼与吸血属性的本质</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-鬼怪</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#ChangeSiLLM-齐天大圣之终极秘密</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#tech</loc>
+        <lastmod>2025-10-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#tech-readme</loc>
+        <lastmod>2025-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#tech-关于长思llm模型</loc>
+        <lastmod>2025-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#life</loc>
+        <lastmod>2025-10-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#about</loc>
+        <lastmod>2025-10-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hongyunqiu.github.io/DrQiuBlog/#contact</loc>
+        <lastmod>2025-10-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
 
 </urlset>
