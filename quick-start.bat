@@ -1,11 +1,11 @@
 @echo off
 chcp 65001 >nul
 echo ================================
-echo   启动自动更新服务器
+echo   Dr.Qiu's Blog - 快速启动
 echo ================================
 echo.
 
-echo [步骤 1/4] 更新版本号以清除缓存...
+echo [快速启动] 更新缓存版本号...
 node update-version.js
 if errorlevel 1 (
     echo [警告] 版本号更新失败，继续启动...
@@ -13,21 +13,11 @@ if errorlevel 1 (
 )
 
 echo.
-echo [步骤 2/4] 生成最新配置...
-python generate-config.py
-if errorlevel 1 (
-    echo [警告] 配置生成失败，继续启动...
-    echo.
-)
-
-echo.
-echo [步骤 3/4] 准备完成！
-echo [步骤 4/4] 启动自动更新服务器...
+echo [快速启动] 启动服务器...
 echo.
 echo ================================
 echo   服务器已启动
 echo   访问地址: http://localhost:8000
-echo   自动更新: 已启用
 echo   按 Ctrl+C 停止服务器
 echo ================================
 echo.
@@ -35,4 +25,3 @@ echo.
 node auto-server.js
 
 pause
-

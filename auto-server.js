@@ -141,7 +141,23 @@ function startServer() {
                     res.end(`服务器错误: ${error.code}`, 'utf-8');
                 }
             } else {
-                res.writeHead(200, { 'Content-Type': contentType });
+                // 设置缓存控制头
+                const headers = {
+                    'Content-Type': contentType,
+                    'Cache-Control': 'no-cache, no-store, must-revalidate',
+                    'Pragma': 'no-cache',
+                    'Expires': '0',
+                    'Last-Modified': new Date().toUTCString(),
+                    'ETag': `"${Date.now()}"`
+                };
+                
+                // 对于静态资源（CSS、JS、图片），使用短期缓存
+                if (filePath.match(/\.(css|js|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf)$/i)) {
+                    headers['Cache-Control'] = 'public, max-age=300'; // 5分钟缓存
+                    headers['Expires'] = new Date(Date.now() + 300000).toUTCString();
+                }
+                
+                res.writeHead(200, headers);
                 res.end(content);
             }
         });
