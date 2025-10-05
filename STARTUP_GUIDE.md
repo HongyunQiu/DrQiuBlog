@@ -99,7 +99,7 @@ update-cache.bat
 
 ## ⚠️ **注意事项**
 
-1. **首次使用**：确保已安装 Node.js 和 Python
+1. **首次使用**：确保已安装 Node.js
 2. **权限问题**：如遇权限错误，以管理员身份运行
 3. **端口冲突**：默认使用8000端口，如被占用会自动提示
 4. **文件监控**：`start-auto-server.bat` 会自动监控context目录变化
@@ -125,9 +125,9 @@ update-cache.bat
 
 ### 问题：配置生成失败
 **解决方案：**
-1. 检查Python是否正确安装
-2. 检查`generate-config.py`文件是否存在
-3. 手动运行：`python generate-config.py`
+1. 检查Node.js是否正确安装
+2. 检查`generate-config.js`文件是否存在
+3. 手动运行：`node generate-config.js`
 
 ### 问题：服务器启动失败
 **解决方案：**
@@ -138,6 +138,6 @@ update-cache.bat
 ## 📞 **技术支持**
 
 如遇到问题，请检查：
-1. Node.js 和 Python 环境
+1. Node.js 环境
 2. 文件权限设置
 3. 网络端口占用情况

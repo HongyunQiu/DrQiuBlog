@@ -15,7 +15,7 @@ if errorlevel 1 (
 
 echo.
 echo [2/4] 重新生成配置...
-python generate-config.py
+node generate-config.js
 if errorlevel 1 (
     echo [错误] 配置生成失败！
     pause

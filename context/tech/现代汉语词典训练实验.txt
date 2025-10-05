@@ -1,3 +1,5 @@
+最初的模型实验，基于nanoGPT
+
 把《现代汉语词典》喂给一个小模型，从零开始炼，出来的效果是这样
 python sample.py --out_dir=out-cndict/15000iters/ --start="*魔"
 Overriding: out_dir = out-cndict/15000iters/

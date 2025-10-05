@@ -17,7 +17,7 @@ const { execSync } = require('child_process');
 // 配置
 const PORT = 8000;
 const CONTEXT_DIR = './context';
-const CONFIG_SCRIPT = 'generate-config.py';
+const CONFIG_SCRIPT = 'generate-config.js';
 
 // MIME 类型
 const MIME_TYPES = {
@@ -57,8 +57,8 @@ function regenerateConfig() {
     console.log('\n[AUTO] 检测到文件变化，正在重新生成配置和Sitemap...');
     
     try {
-        // 运行 Python 脚本（会自动更新sitemap）
-        const output = execSync(`python ${CONFIG_SCRIPT}`, { 
+        // 运行 JavaScript 脚本
+        const output = execSync(`node ${CONFIG_SCRIPT}`, { 
             encoding: 'utf-8',
             stdio: 'pipe'
         });

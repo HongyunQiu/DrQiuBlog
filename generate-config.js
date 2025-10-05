@@ -271,6 +271,21 @@ function main() {
     console.log(`   - 文章总数: ${totalFiles} 篇`);
     
     console.log('\n🎉 完成！现在可以刷新浏览器查看更新。');
+    
+    // 自动更新sitemap.xml
+    console.log('\n[SITEMAP] 正在更新sitemap.xml...');
+    try {
+        const { execSync } = require('child_process');
+        const output = execSync('node generate-sitemap.js', { 
+            encoding: 'utf-8',
+            stdio: 'pipe'
+        });
+        console.log(output);
+        console.log('[SUCCESS] sitemap.xml已自动更新！');
+    } catch (error) {
+        console.error('[WARN] sitemap.xml更新失败:', error.message);
+        console.log('[INFO] 请手动运行: node generate-sitemap.js');
+    }
 }
 
 // 运行主函数

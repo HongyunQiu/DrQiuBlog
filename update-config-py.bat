@@ -7,7 +7,7 @@ echo.
 echo 正在扫描 context 目录...
 echo.
 
-python generate-config.py
+node generate-config.js
 
 echo.
 echo ================================

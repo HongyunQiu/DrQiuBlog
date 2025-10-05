@@ -56,9 +56,8 @@ DrQiuBlog/
 ├── config.js               # 配置文件（可自动生成）
 ├── dynamic-loader.js       # 动态内容加载器
 ├── script.js               # 辅助功能脚本
-├── generate-config.py      # 🆕 自动生成配置（Python）
-├── generate-config.js      # 🆕 自动生成配置（Node.js）
-├── update-config-py.bat    # 🆕 一键更新配置（Python）
+├── generate-config.js      # 🆕 自动生成配置（JavaScript）
+├── update-config-py.bat    # 🆕 一键更新配置（JavaScript）
 ├── update-config.bat       # 🆕 一键更新配置（Node.js）
 ├── start-server.bat        # 启动本地服务器
 ├── readme.md               # 说明文档
@@ -135,7 +134,7 @@ start-auto-server.bat
    update-config-py.bat
    
    # 或命令行运行
-   python generate-config.py
+   node generate-config.js
    ```
 3. 刷新浏览器（Ctrl + F5）
 

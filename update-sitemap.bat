@@ -7,7 +7,7 @@ echo.
 echo 正在生成sitemap.xml...
 echo.
 
-python generate-sitemap-simple.py
+node generate-sitemap.js
 
 echo.
 echo ================================
