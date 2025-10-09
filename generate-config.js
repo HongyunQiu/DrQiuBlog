@@ -124,7 +124,18 @@ function generateFileId(categoryId, filename) {
 function getFileDescription(filePath) {
     try {
         const content = fs.readFileSync(filePath, 'utf-8');
-        const firstLine = content.split('\n')[0].trim();
+        let firstLine = content.split('\n')[0].trim();
+        
+        // 清理可能导致JSON解析错误的字符
+        // 将中文引号替换为单引号，避免与JSON双引号冲突
+        // 使用Unicode转义确保正确匹配
+        firstLine = firstLine
+            .replace(/\u201C/g, "'")  // 中文左双引号 "
+            .replace(/\u201D/g, "'")  // 中文右双引号 "
+            .replace(/\u2018/g, "'")  // 中文左单引号 '
+            .replace(/\u2019/g, "'")  // 中文右单引号 '
+            .replace(/"/g, '\\"'); // 转义英文双引号
+        
         if (firstLine.length > 50) {
             return firstLine.substring(0, 50) + '...';
         }

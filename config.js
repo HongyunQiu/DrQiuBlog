@@ -1,6 +1,6 @@
 // 博客内容配置文件
 // 此文件由 generate-config.js 自动生成
-// 生成时间: 2025/10/5 12:15:53
+// 生成时间: 2025/10/10 00:02:03
 
 const blogConfig = {
     // 内容目录的基础路径
@@ -36,7 +36,7 @@ const blogConfig = {
                                 id: "ChangeSiLLM-人类中的异类",
                                 name: "人类中的异类",
                                 filename: "人类中的异类.txt",
-                                description: "“再见，你是人类中的一个异类。你是这么晚才走的吧。你是一位新来探险者吗？”",
+                                description: "'再见，你是人类中的一个异类。你是这么晚才走的吧。你是一位新来探险者吗？'",
                                 type: "text"
                         },
                         {
@@ -64,14 +64,14 @@ const blogConfig = {
                                 id: "ChangeSiLLM-去森林",
                                 name: "去森林",
                                 filename: "去森林.txt",
-                                description: "​​“为什么我还是不相信自己的坚强，苏珊？从这儿出去有多少路？”同伴厉声问道。",
+                                description: "​​'为什么我还是不相信自己的坚强，苏珊？从这儿出去有多少路？'同伴厉声问道。",
                                 type: "text"
                         },
                         {
                                 id: "ChangeSiLLM-古文",
                                 name: "古文",
                                 filename: "古文.txt",
-                                description: "于此偕州山石间，朝露未揩。烟霞漫天。时会中鼓，新晴尚白，醉雨垂杨。上有树荫曰“朝霞浸城”，下有草树曰...",
+                                description: "于此偕州山石间，朝露未揩。烟霞漫天。时会中鼓，新晴尚白，醉雨垂杨。上有树荫曰'朝霞浸城'，下有草树曰...",
                                 type: "text"
                         },
                         {
@@ -120,7 +120,7 @@ const blogConfig = {
                                 id: "ChangeSiLLM-我是一个人工智能机器人",
                                 name: "我是一个人工智能机器人",
                                 filename: "我是一个人工智能机器人.txt",
-                                description: "“你是谁？“",
+                                description: "'你是谁？'",
                                 type: "text"
                         },
                         {
@@ -183,7 +183,7 @@ const blogConfig = {
                                 id: "ChangeSiLLM-民间旅行者",
                                 name: "民间旅行者",
                                 filename: "民间旅行者.txt",
-                                description: "“再见，你是人类中的一个异类。你是这么晚才走的吧。你是一位新来探险者吗？”",
+                                description: "'再见，你是人类中的一个异类。你是这么晚才走的吧。你是一位新来探险者吗？'",
                                 type: "text"
                         },
                         {
@@ -302,7 +302,7 @@ const blogConfig = {
                                 id: "ChangeSiLLM-预知之火",
                                 name: "预知之火",
                                 filename: "预知之火.txt",
-                                description: "“世界的变化将比你想象的更快发生。”我一句话激怒了他。",
+                                description: "'世界的变化将比你想象的更快发生。'我一句话激怒了他。",
                                 type: "text"
                         },
                         {
@@ -330,7 +330,7 @@ const blogConfig = {
                                 id: "ChangeSiLLM-黑色蝴蝶",
                                 name: "黑色蝴蝶",
                                 filename: "黑色蝴蝶.txt",
-                                description: "“妈妈过去的笔记本电脑机关好像被谁轻易拿走了。”我嘴里嘀咕着，四周一下子变得越来越静，森冷的空气弥漫...",
+                                description: "'妈妈过去的笔记本电脑机关好像被谁轻易拿走了。'我嘴里嘀咕着，四周一下子变得越来越静，森冷的空气弥漫...",
                                 type: "text"
                         },
                         {
