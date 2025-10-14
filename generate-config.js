@@ -297,6 +297,21 @@ function main() {
         console.error('[WARN] sitemap.xml更新失败:', error.message);
         console.log('[INFO] 请手动运行: node generate-sitemap.js');
     }
+    
+    // 自动更新index.html
+    console.log('\n[INDEX] 正在更新index.html...');
+    try {
+        const { execSync } = require('child_process');
+        const output = execSync('node update-index.js', { 
+            encoding: 'utf-8',
+            stdio: 'pipe'
+        });
+        console.log(output);
+        console.log('[SUCCESS] index.html已自动更新！');
+    } catch (error) {
+        console.error('[WARN] index.html更新失败:', error.message);
+        console.log('[INFO] 请手动运行: node update-index.js');
+    }
 }
 
 // 运行主函数

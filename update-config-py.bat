@@ -17,6 +17,7 @@ echo.
 echo 已自动更新：
 echo   ✓ config.js (博客配置)
 echo   ✓ sitemap.xml (搜索引擎地图)
+echo   ✓ index.html (页面内容和SEO数据)
 echo.
 echo 现在可以刷新浏览器查看更新！
 echo.
